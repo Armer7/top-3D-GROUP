@@ -1,0 +1,29 @@
+.menu{
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+
+  @include media-small {
+    margin-bottom: 20px;
+  }
+
+  @include media-md {
+    margin-bottom: 71px;
+  }
+}
+
+.header {
+  z-index: 1000;
+  position: relative;
+  box-shadow: 0 4px 48px 0 rgba(0, 0, 0, 0.16);
+}
+
+.h-container {
+
+  width: 100%;
+
+  &.line {
+    border-bottom: 1px solid transparentize($border-light-color, 0.65);
+}
+}

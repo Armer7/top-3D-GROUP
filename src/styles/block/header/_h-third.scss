@@ -1,0 +1,22 @@
+.h-third {
+  font-weight: bold;
+  font-size: $font-size-small - 1px;
+  line-height: $line-height-small - 1px;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 100%;
+  display: none;
+
+  @include media-small {
+    @include d-flex-justify-space-between;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @include media-md {
+    font-size: $font-size-md;
+    line-height: $line-height-md;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

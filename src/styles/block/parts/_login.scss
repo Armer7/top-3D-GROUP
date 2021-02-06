@@ -1,0 +1,22 @@
+.login {
+
+  &__link {
+    @include d-flex-justify-start;
+
+    &:hover {
+      .login__text {
+        color: $red-color;
+      }
+    }
+  }
+
+  &__icon {
+    margin-right: 8px;
+  }
+
+  &__text {
+    font-weight: 600;
+    color: $text-header-color;
+  }
+
+}

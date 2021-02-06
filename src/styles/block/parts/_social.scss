@@ -1,0 +1,11 @@
+.social {
+  display: inline-flex;
+  justify-content: center;
+
+  .social__link {
+    &:not(:last-child) {
+      margin-right: 19px;
+    }
+  }
+
+}

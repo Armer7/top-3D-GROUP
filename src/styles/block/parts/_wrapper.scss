@@ -1,0 +1,35 @@
+.wrapper {
+  min-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+
+  @include media-small-xs {
+    width: $width-small-xs;
+    background: none;
+  }
+
+  @include media-small {
+    width: $width-small
+  }
+
+  @include media-md {
+    width: $width-md;
+  }
+
+  @include media-lg {
+    width: $width-lg;
+  }
+
+}
+
+.wrap {
+  padding: 0;
+  @include media-md {
+    padding-left: $wrapper-padding-md;
+    padding-right: $wrapper-padding-md;
+  }
+  @include media-lg {
+    padding-left: $wrapper-padding-lg;
+    padding-right: $wrapper-padding-lg;
+  }
+}

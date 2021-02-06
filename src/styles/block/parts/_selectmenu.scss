@@ -1,0 +1,40 @@
+.h-menu {
+  @include d-flex-justify-space-between;
+  padding-top: 21px;
+  padding-bottom: 22px;
+  padding-left: 4px;
+  padding-right: 4px;
+  &__link {
+    position: relative;
+    padding-right: 18px;
+    transition: .2s ease;
+    &:before {
+      @include arrowSelect(to bottom, 1px, 18px, $border-light-color);
+      transition: .2s ease;
+    }
+    @include media-small {
+      padding-right: 15px;
+      &:before {
+        @include arrowSelect(to bottom, 1px, 15px, $border-light-color);
+        transition: .2s ease;
+      }
+    }
+
+  }
+  &:hover {
+    background-color: darken($white-color, 10%);
+    .h-menu__link {
+      &:before {
+        @include arrowSelect(to top, 1px, 18px, $border-light-color);
+      }
+      @include media-small {
+        padding-right: 15px;
+        .h-menu__link:before {
+          @include arrowSelect(to bottom, 1px, 15px, $border-light-color);
+          transition: .2s ease;
+        }
+      }
+    }
+  }
+
+}

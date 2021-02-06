@@ -1,0 +1,34 @@
+// COLORS
+
+$black-color: #000;
+$white-color: #fff;
+$red-color: #D2001C;
+$gray-color: #E5E5E5;
+$yellow-color: #FED600;
+$border-color: lighten($gray-color, 5%);
+$border-light-color: #BDBDBD;
+$text-color: #4D4D4D;
+$text-color-light: #C4C4C4;
+$text-header-color: #222;
+$fader-color: rgba(0, 0, 0, 0.7);
+$text-bg-color: #f7f7f7;
+$gray-light-color: #f9f9f9;
+
+
+// SIZES
+$width-lg: 1440px;
+$width-md: 1280px;
+$width-small: 880px;
+$width-small-xs: 640px;
+
+//WRAPPER PADDING
+
+$wrapper-padding-lg: 100px;
+$wrapper-padding-md: 15px;
+
+//FONT SIZE
+$font-coefficient-small: 3px;
+$font-size-md: 13px;
+$line-height-md: 18px;
+$font-size-small: $font-size-md - $font-coefficient-small;
+$line-height-small: $line-height-md - $font-coefficient-small;

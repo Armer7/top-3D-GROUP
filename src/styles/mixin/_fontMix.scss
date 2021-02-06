@@ -1,0 +1,18 @@
+@mixin open-sans {
+  font-family: 'Open Sans', serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin sf-pro-text-medium {
+  font-family: 'SF Pro Text', serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin sf-pro-display-regular {
+  font-family: 'SF Pro Display', serif;
+  font-weight: normal;
+  font-style: normal;
+}
+

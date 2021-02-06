@@ -1,0 +1,128 @@
+// Link
+$sign-link-fon-size: 14px;
+$sign-link-color: #000;
+
+// Item
+$item-border-color: #dfdfdf;
+
+// Header
+$return-bg-color: #f1f1f1;
+
+.mobile-menu {
+  &__back {
+    &__link {
+      text-decoration: none;
+    }
+
+    &__item {
+      display: block;
+      position: relative;
+      padding: 15px 30px 15px 21px;
+      font-weight: 600;
+      font-size: $sign-link-fon-size;
+      color: $sign-link-color;
+
+      &::after {
+        @include arrowSelect(to left, 1px, 22px, $text-header-color);
+        left: 10px;
+        right: auto;
+      }
+    }
+  }
+
+  &__sign-in {
+    display: none;
+
+    &__link {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 15px 30px 15px 21px;
+      font-weight: 600;
+      font-size: $sign-link-fon-size;
+      text-decoration: none;
+      color: $sign-link-color;
+      background: $return-bg-color;
+
+      &::after {
+        @include triangle(to bottom, 15px, 7.5px, $return-bg-color);
+        content: "";
+        position: absolute;
+        left: 21px;
+        bottom: -7.5px;
+      }
+
+      &:active {
+        color: $sign-link-color;
+      }
+    }
+
+    &__item {
+      padding-bottom: 2px;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+
+    &__item {
+      position: relative;
+      display: none;
+
+      > .nested {
+        display: none;
+        margin-left: 0;
+
+        .is-open {
+          > .nested {
+            display: flex !important;
+          }
+        }
+      }
+    }
+
+    &__link {
+      position: relative;
+      display: block;
+      border-bottom: solid 1px $item-border-color;
+      padding: 1rem 30px 1rem 1rem;
+      width: 100%;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 19px;
+      text-decoration: none;
+      color: #000;
+
+      &--parent {
+        &::after {
+          @include arrowSelect(to right, 1px, 22px, $text-header-color);
+          right: 20px;
+
+        }
+      }
+
+      &--top {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .menu {
+    padding-left: 0;
+
+    a {
+      padding: 15px 30px 15px 21px;
+    }
+  }
+
+  .active {
+    display: block;
+  }
+
+  .is-open {
+    display: block;
+  }
+}

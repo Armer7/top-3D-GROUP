@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="favicon.ico" type="image/ico" />
+    <title>Test 3D</title>
+  </head>
+  <body class="page">
+    <header id="menu" class="menu">
+      <div
+        class="popup-menu popup-mobil-menu"
+        data-type="popup-menu"
+        style="height: 2369px"
+      >
+        <div class="popup-menu__block" data-type="popup-subMenu">
+          <div class="popup-menu__content wrapper">
+            <div class="popup-menu__auth">
+              <a class="link login__link" href="#" data-type="login">
+                <img
+                  class="login__icon"
+                  src="assets/image/login.svg"
+                  alt="login"
+                />
+                <span class="login__text">Войти</span>
+              </a>
+            </div>
+            <div class="mobile-menu">
+              <div class="mobile-menu__sign-in" data-type="sign-in">
+                <a class="mobile-menu__back__link" href="javascript:void(0);">
+                  <span class="mobile-menu__back__item" data-type="popup-back">
+                    Назад
+                  </span>
+                </a>
+                <a
+                  class="mobile-menu__sign-in__link"
+                  href="javascript:void(0);"
+                >
+                  <span class="mobile-menu__sign-in__item">Каталог</span>
+                </a>
+              </div>
+              <ul class="mobile-menu__list menu active">
+                <li class="mobile-menu__list__item active">
+                  <a
+                    href="javascript:void(0);"
+                    class="mobile-menu__list__link mobile-menu__list__link--parent"
+                  >
+                    Каталог
+                  </a>
+                  <ul class="menu vertical nested">
+                    <li class="mobile-menu__list__item">
+                      <a
+                        href="javascript:void(0);"
+                        class="mobile-menu__list__link mobile-menu__list__link--parent"
+                      >
+                        3D-принтеры
+                      </a>
+                      <ul class="menu vertical nested">
+                        <li class="mobile-menu__list__item">
+                          <a
+                            href="kupit-3d-printer/"
+                            class="mobile-menu__list__link"
+                            >Все 3D-принтеры
+                          </a>
+                        </li>
+                        <li class="mobile-menu__list__item">
+                          <a
+                            href="javascript:void(0);"
+                            class="mobile-menu__list__link mobile-menu__list__link--parent"
+                            >По уровню пользователя
+                          </a>
+                          <ul class="menu vertical nested">
+                            <li class="mobile-menu__list__item">
+                              <a
+                                href="kupit-3d-printer/personal/"
+                                class="mobile-menu__list__link"
+                              >
+                                Персональные
+                              </a>
+                            </li>
+                            <li class="mobile-menu__list__item">
+                              <a
+                                href="/kupit-3d-printer/prof/"
+                                class="mobile-menu__list__link"
+                              >
+                                Профессиональные
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="mobile-menu__list__item">
+                          <a
+                            href="#texno"
+                            class="mobile-menu__list__link mobile-menu__list__link--parent"
+                            >По технологии
+                          </a>
+                          <ul class="menu vertical nested">
+                            <li class="mobile-menu__list__item">
+                              <a
+                                href="kupit-3d-printer/3d-printers-technology-fdm/"
+                                class="mobile-menu__list__link"
+                                >FDM (печать пластиком)
+                              </a>
+                            </li>
+                            <li class="mobile-menu__list__item active">
+                              <a
+                                href="kupit-3d-printer/f/material/fotopolimer/"
+                                class="mobile-menu__list__link"
+                                >LCD/DLP/SLA (фотополимерная печать)
+                              </a>
+                            </li>
+                            <li class="mobile-menu__list__item active">
+                              <a
+                                href="/kupit-3d-printer/3d-printers-technology-sls/"
+                                class="mobile-menu__list__link"
+                                >SLS (печать полиамидом)
+                              </a>
+                            </li>
+                            <li class="mobile-menu__list__item active">
+                              <a
+                                href="kupit-3d-printer/3d-printers-technology-slm/"
+                                class="mobile-menu__list__link"
+                                >SLM (печать металлом)
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="mobile-menu__list__item">
+                          <a
+                            href="javascript:void(0);"
+                            class="mobile-menu__list__link mobile-menu__list__link--parent"
+                            >По назначению
+                          </a>
+                          <ul class="menu vertical nested">
+                            <li class="mobile-menu__list__item">
+                              <a
+                                href="kupit-3d-printer/3d-printers-naznachenie-detskie/"
+                                class="mobile-menu__list__link"
+                                >Для детей
+                              </a>
+                            </li>
+                            <li class="mobile-menu__list__item">
+                              <a
+                                href="kupit-3d-printer/f/naznachenie/dlja-nachinajuschih/"
+                                class="mobile-menu__list__link"
+                              >
+                                Для начинающих
+                              </a>
+                            </li>
+                            <li class="mobile-menu__list__item">
+                              <a
+                                href="kupit-3d-printer/f/naznachenie/dlja-doma/"
+                                class="mobile-menu__list__link"
+                                >Для дома
+                              </a>
+                            </li>
+                            <li class="mobile-menu__list__item">
+                              <a
+                                href="kupit-3d-printer/3d-printers-naznachenie-dlja-malogo-biznesa/"
+                                class="mobile-menu__list__link"
+                              >
+                                Для бизнеса
+                              </a>
+                            </li>
+                            <li class="mobile-menu__list__item">
+                              <a
+                                href="https://top3dshop.ru/kupit-3d-printer/f/naznachenie/dlja-obrazovanija/"
+                                class="mobile-menu__list__link"
+                              >
+                                Для образования
+                              </a>
+                            </li>
+                            <li class="mobile-menu__list__item">
+                              <a
+                                href="https://top3dshop.ru/kupit-3d-printer/3d-printers-naznachenie-stomatologicheskie/"
+                                class="mobile-menu__list__link"
+                              >
+                                Для стоматологии
+                              </a>
+                            </li>
+                            <li class="mobile-menu__list__item">
+                              <a
+                                href="https://top3dshop.ru/kupit-3d-printer/3d-printers-naznachenie-meditsinskie/"
+                                class="mobile-menu__list__link"
+                              >
+                                Для медицины
+                              </a>
+                            </li>
+                            <li class="mobile-menu__list__item">
+                              <a
+                                href="https://top3dshop.ru/kupit-3d-printer/3d-printers-naznachenie-dlja-juvelirnogo-dela/"
+                                class="mobile-menu__list__link"
+                              >
+                                Для ювелиров
+                              </a>
+                            </li>
+                            <li class="mobile-menu__list__item">
+                              <a
+                                href="https://top3dshop.ru/kupit-3d-printer/3d-printers-naznachenie-stroitelnye/"
+                                class="mobile-menu__list__link"
+                              >
+                                Для строительства
+                              </a>
+                            </li>
+                            <li class="mobile-menu__list__item">
+                              <a
+                                href="https://top3dshop.ru/kupit-3d-printer/3d-printers-naznachenie-dlja-proizvodstva/"
+                                class="mobile-menu__list__link"
+                              >
+                                Для производства
+                              </a>
+                            </li>
+                            <li class="mobile-menu__list__item">
+                              <a
+                                href="https://top3dshop.ru/kupit-3d-printer/prom/"
+                                class="mobile-menu__list__link"
+                              >
+                                Для промышленности
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="mobile-menu__list__item">
+                          <a
+                            href="javascript:void(0);"
+                            class="mobile-menu__list__link mobile-menu__list__link--parent"
+                            >По особенностям
+                          </a>
+                          <ul class="menu vertical nested">
+                            <li class="mobile-menu__list__item">
+                              <a
+                                href="https://top3dshop.ru/kupit-3d-printer/3d-printers-oblast-pechati-bolshaja/"
+                                class="mobile-menu__list__link"
+                                >Большая область печати
+                              </a>
+                            </li>
+                            <li class="mobile-menu__list__item">
+                              <a
+                                href="https://top3dshop.ru/aksessuary-dlya-3d-printera/"
+                                class="mobile-menu__list__link"
+                                >Цветные
+                              </a>
+                            </li>
+                            <li class="mobile-menu__list__item">
+                              <a
+                                href="https://top3dshop.ru/kupit-3d-printer/f/osobennosti/vysokoj-tochnosti/"
+                                class="mobile-menu__list__link"
+                              >
+                                Высокоточные
+                              </a>
+                            </li>
+                            <li class="mobile-menu__list__item">
+                              <a
+                                href="https://top3dshop.ru/kupit-3d-printer/3d-printers-tip-korpusa-zakrytiy/"
+                                class="mobile-menu__list__link"
+                              >
+                                Закрытый корпус
+                              </a>
+                            </li>
+                            <li class="mobile-menu__list__item">
+                              <a
+                                href="https://top3dshop.ru/kupit-3d-printer/3d-printers-kolichestvo-ekstruderov-2/"
+                                class="mobile-menu__list__link"
+                              >
+                                Два экструдера
+                              </a>
+                            </li>
+                            <li class="mobile-menu__list__item">
+                              <a
+                                href="https://top3dshop.ru/kupit-3d-printer/byudzhetnyy-3d-printer/"
+                                class="mobile-menu__list__link"
+                                >Бюджетные
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="mobile-menu__list__item">
+                          <a
+                            href="javascript:void(0);"
+                            class="mobile-menu__list__link mobile-menu__list__link--parent"
+                            >По производителям
+                          </a>
+                          <ul class="menu vertical nested">
+                            <li class="mobile-menu__list__item">
+                              <a
+                                href="https://top3dshop.ru/kupit-3d-printer/3d-printers-anycubic/"
+                                class="mobile-menu__list__link"
+                              >
+                                Anycubic
+                              </a>
+                            </li>
+                            <li class="mobile-menu__list__item">
+                              <a
+                                href="https://top3dshop.ru/kupit-3d-printer/3d-printers-formlabs/"
+                                class="mobile-menu__list__link"
+                              >
+                                Formlabs
+                              </a>
+                            </li>
+                            <li class="mobile-menu__list__item">
+                              <a
+                                href="https://top3dshop.ru/kupit-3d-printer/3d-printers-imprinta/"
+                                class="mobile-menu__list__link"
+                              >
+                                Hercules
+                              </a>
+                            </li>
+                            <li class="mobile-menu__list__item">
+                              <a
+                                href="https://top3dshop.ru/kupit-3d-printer/3d-printers-maestro/"
+                                class="mobile-menu__list__link"
+                              >
+                                Maestro
+                              </a>
+                            </li>
+                            <li class="mobile-menu__list__item">
+                              <a
+                                href="https://top3dshop.ru/kupit-3d-printer/f/manufacturer-phrozen/"
+                                class="mobile-menu__list__link"
+                                >Phrozen
+                              </a>
+                            </li>
+                            <li class="mobile-menu__list__item">
+                              <a
+                                href="https://top3dshop.ru/kupit-3d-printer/3d-printers-picaso/"
+                                class="mobile-menu__list__link"
+                              >
+                                Picaso 3D
+                              </a>
+                            </li>
+                            <li class="mobile-menu__list__item">
+                              <a
+                                href="https://top3dshop.ru/kupit-3d-printer/3d-printers-raise-3d/"
+                                class="mobile-menu__list__link"
+                              >
+                                Raise3D
+                              </a>
+                            </li>
+                            <li class="mobile-menu__list__item">
+                              <a
+                                href="https://top3dshop.ru/kupit-3d-printer/3d-printers-total-z/"
+                                class="mobile-menu__list__link"
+                              >
+                                Sinterit
+                              </a>
+                            </li>
+                            <li class="mobile-menu__list__item">
+                              <a
+                                href="https://top3dshop.ru/kupit-3d-printer/f/manufacturer-unic/"
+                                class="mobile-menu__list__link"
+                              >
+                                Total Z
+                              </a>
+                            </li>
+                            <li class="mobile-menu__list__item">
+                              <a
+                                href="https://top3dshop.ru/kupit-3d-printer/f/manufacturer-unic/"
+                                class="mobile-menu__list__link"
+                              >
+                                Uniz
+                              </a>
+                            </li>
+                            <li class="mobile-menu__list__item">
+                              <a
+                                href="https://top3dshop.ru/kupit-3d-printer/3d-printers-wanhao/"
+                                class="mobile-menu__list__link"
+                              >
+                                Wanhao
+                              </a>
+                            </li>
+                            <li class="mobile-menu__list__item">
+                              <a
+                                href="https://top3dshop.ru/kupit-3d-printer/3d-printers-zenit/"
+                                class="mobile-menu__list__link"
+                              >
+                                Zenit
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="mobile-menu__list__item">
+                          <a
+                            href="javascript:void(0);"
+                            class="mobile-menu__list__link mobile-menu__list__link--parent"
+                            >Доп. оборудование и аксессуары
+                          </a>
+                          <ul class="menu vertical nested">
+                            <li class="mobile-menu__list__item">
+                              <a
+                                href="https://top3dshop.ru/search/?search=ванна%20для%20печати"
+                                class="mobile-menu__list__link"
+                              >
+                                Ванны для печати
+                              </a>
+                            </li>
+                            <li class="mobile-menu__list__item">
+                              <a
+                                href="https://top3dshop.ru/search/?search=уф%20камера"
+                                class="mobile-menu__list__link"
+                              >
+                                УФ–камеры
+                              </a>
+                            </li>
+                            <li class="mobile-menu__list__item">
+                              <a
+                                href="https://top3dshop.ru/search/?search=%D0%BF%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D0%B8"
+                                class="mobile-menu__list__link"
+                                >Платформы для печати
+                              </a>
+                            </li>
+                            <li class="mobile-menu__list__item">
+                              <a
+                                href="https://top3dshop.ru/search/?search=%D1%81%D1%82%D0%B5%D0%BA%D0%BB%D0%BE"
+                                class="mobile-menu__list__link"
+                              >
+                                Стекло для 3D–принтера
+                              </a>
+                            </li>
+                            <li class="mobile-menu__list__item">
+                              <a
+                                href="https://top3dshop.ru/search/?search=FEP%20пленка"
+                                class="mobile-menu__list__link"
+                              >
+                                FEP–пленка
+                              </a>
+                            </li>
+                            <li class="mobile-menu__list__item">
+                              <a
+                                href="https://top3dshop.ru/materiali/materiali-postobrabotka/"
+                                class="mobile-menu__list__link"
+                              >
+                                Средства для постобработки
+                              </a>
+                            </li>
+                            <li class="mobile-menu__list__item">
+                              <a
+                                href="https://top3dshop.ru/aksessuary-dlya-3d-printera/"
+                                class="mobile-menu__list__link"
+                              >
+                                Запчасти
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="mobile-menu__list__item">
+                      <a
+                        href="javascript:void(0);"
+                        class="mobile-menu__list__link mobile-menu__list__link--parent"
+                      >
+                        3D-сканеры
+                      </a>
+                    </li>
+                    <li class="mobile-menu__list__item">
+                      <a
+                        href="javascript:void(0);"
+                        class="mobile-menu__list__link mobile-menu__list__link--parent"
+                      >
+                        Станки
+                      </a>
+                    </li>
+                    <li class="mobile-menu__list__item">
+                      <a
+                        href="javascript:void(0);"
+                        class="mobile-menu__list__link mobile-menu__list__link--parent"
+                      >
+                        Роботы
+                      </a>
+                    </li>
+                    <li class="mobile-menu__list__item">
+                      <a
+                        href="javascript:void(0);"
+                        class="mobile-menu__list__link mobile-menu__list__link--parent"
+                      >
+                        Образование
+                      </a>
+                    </li>
+                    <li class="mobile-menu__list__item">
+                      <a
+                        href="javascript:void(0);"
+                        class="mobile-menu__list__link mobile-menu__list__link--parent"
+                      >
+                        Стоматологам
+                      </a>
+                    </li>
+                    <li class="mobile-menu__list__item">
+                      <a
+                        href="javascript:void(0);"
+                        class="mobile-menu__list__link mobile-menu__list__link--parent"
+                      >
+                        Гаджеты
+                      </a>
+                    </li>
+                    <li class="mobile-menu__list__item">
+                      <a
+                        href="javascript:void(0);"
+                        class="mobile-menu__list__link mobile-menu__list__link--parent"
+                      >
+                        Материалы
+                      </a>
+                    </li>
+                    <li class="mobile-menu__list__item">
+                      <a
+                        href="javascript:void(0);"
+                        class="mobile-menu__list__link mobile-menu__list__link--parent"
+                      >
+                        ПО
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="mobile-menu__list__item active">
+                  <a
+                    href="javascript:void(0);"
+                    class="mobile-menu__list__link mobile-menu__list__link--parent"
+                  >
+                    Услуги
+                  </a>
+                </li>
+                <li class="mobile-menu__list__item active">
+                  <a
+                    href="javascript:void(0);"
+                    class="mobile-menu__list__link mobile-menu__list__link--parent"
+                  >
+                    Решения
+                  </a>
+                </li>
+                <li class="mobile-menu__list__item active">
+                  <a
+                    href="javascript:void(0);"
+                    class="mobile-menu__list__link mobile-menu__list__link--parent"
+                  >
+                    Учебный центр
+                  </a>
+                </li>
+                <li class="mobile-menu__list__item active">
+                  <a href="#" class="mobile-menu__list__link">Акции</a>
+                </li>
+                <li class="mobile-menu__list__item active">
+                  <a href="#" class="mobile-menu__list__link">О нас</a>
+                </li>
+                <li class="mobile-menu__list__item active">
+                  <a href="#" class="mobile-menu__list__link"> Мероприятия</a>
+                </li>
+                <li class="mobile-menu__list__item active">
+                  <a href="#" class="mobile-menu__list__link">
+                    Оплата и доставка
+                  </a>
+                </li>
+                <li class="mobile-menu__list__item active">
+                  <a href="#" class="mobile-menu__list__link">
+                    Что с моим заказом?
+                  </a>
+                </li>
+                <li class="mobile-menu__list__item active">
+                  <a href="#" class="mobile-menu__list__link">Гос. закупки</a>
+                </li>
+                <li class="mobile-menu__list__item active">
+                  <a href="#" class="mobile-menu__list__link">Блог</a>
+                </li>
+                <li class="mobile-menu__list__item active">
+                  <a href="#" class="mobile-menu__list__link">Мастер-классы</a>
+                </li>
+                <li class="mobile-menu__list__item active">
+                  <a href="#" class="mobile-menu__list__link"> Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="popup-menu__contacts">
+              <div class="popup-menu__call">
+                <div class="phone">
+                  <div>
+                    <a class="link" href="tel:+78126135838"
+                      >+7&nbsp;(812)&nbsp;613-58-38
+                    </a>
+                  </div>
+                  <div class="phone__time">
+                    <span>Пн–пт 10:00–19:00, сб-вс 10:00–17:00</span>
+                  </div>
+                </div>
+                <div class="popup-menu__chat">
+                  <span class="social">
+                    <a href="#" class="social__link">
+                      <img src="assets/image/Telegram.svg" alt="telegram" />
+                    </a>
+                    <a href="#" class="social__link">
+                      <img src="assets/image/skype.svg" alt="skype" />
+                    </a>
+                    <a href="#" class="social__link">
+                      <img src="assets/image/viber.svg" alt="viber" />
+                    </a>
+                  </span>
+                </div>
+              </div>
+              <div class="popup-menu__mail">
+                <a class="link link__control" href="#"> Напишите нам</a>
+              </div>
+              <div class="popup-menu__boss">
+                <a class="link link__control" href="#">
+                  Свяжитесь с директором
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.popup-menu -->
+
+      <div class="header wrapper">
+        <div class="h-contact wrap">
+          <div class="h-contact__wrap">
+            <div class="h-contact__left">
+              <div class="h-contact__item">
+                <a class="link h-contact__city" href="#">Санкт-Петербург</a>
+              </div>
+              <div class="h-contact__item">
+                <a class="link h-contact__tel" href="tel:+78126135838"
+                  >+7 (812) 613-58-38
+                </a>
+              </div>
+              <div class="h-contact__item">
+                <span>Пн–пт 10:00–19:00, сб-вс 10:00–17:00</span>
+              </div>
+            </div>
+            <div class="h-contact__right">
+              <div class="h-contact__item">
+                <a class="link" href="">Напишите нам</a>
+              </div>
+              <div class="h-contact__item">
+                <a class="link" href="">Свяжитесь с директором</a>
+              </div>
+              <div class="h-contact__item">
+                <span class="social">
+                  <a href="#" class="social__link">
+                    <img src="assets/image/Telegram.svg" alt="telegram"
+                  /></a>
+                  <a href="#" class="social__link">
+                    <img src="assets/image/skype.svg" alt="skype"
+                  /></a>
+                  <a href="#" class="social__link">
+                    <img src="assets/image/viber.svg" alt="viber" />
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <!-- /.h-contact__wrap -->
+        </div>
+        <!-- /.h-contact -->
+        <div class="h-container wrap">
+          <div class="h-first">
+            <div class="h-first__menu-mobile" data-type="menu-mobile"></div>
+            <div class="h-first__logo">
+              <a class="link" href="#"
+                ><img
+                  class="h-first__icon-logo"
+                  src="assets/image/logo.png"
+                  alt="logo"
+              /></a>
+              <div class="h-first__text-Logo">
+                <a class="link" href="">
+                  Ваш эксперт <br />
+                  на рынке
+                  <span class="text-red">3D</span>-техники
+                </a>
+              </div>
+            </div>
+            <!-- /.h-first__logo -->
+            <div class="h-first__yandex">
+              <a href="#"
+                ><img src="assets/image/yandexLink.png" alt="yandex market"
+              /></a>
+            </div>
+            <div class="phone">
+              <div>
+                <a class="link" href="tel:+78126135838">+7 (812) 613-58-38</a>
+              </div>
+              <div class="phone__time">
+                <span>Пн–пт 10:00–19:00, сб-вс 10:00–17:00</span>
+              </div>
+            </div>
+            <!-- /.h-first__phone -->
+            <div class="search">
+              <form class="search__form" action="/">
+                <div class="search__input-type">
+                  <img
+                    class="search__input-icon"
+                    src="assets/image/search-icon-gray.svg"
+                    alt=""
+                  />
+                  <input
+                    class="input search__input"
+                    placeholder="Введите запрос, например, Formlabs Form 2"
+                    type="search"
+                    autocomplete="off"
+                  />
+                  <a class="link search__submit" href="#"> Найти</a>
+                  <a href="#" class="search__mobile-submit"></a>
+                  <a
+                    class="search__mobile-close"
+                    href="javascript:void(0);"
+                    data-type="close-search"
+                  ></a>
+                </div>
+              </form>
+            </div>
+            <!-- /.search -->
+            <div class="login">
+              <a class="link login__link" href="#">
+                <img
+                  class="login__icon"
+                  src="assets/image/login.svg"
+                  alt="login"
+                />
+                <span class="login__text">Войти</span>
+              </a>
+            </div>
+            <!-- /.login -->
+            <div class="cart">
+              <a class="link cart__link" href="#">
+                <img
+                  class="cart__icon"
+                  src="assets/image/cart.svg"
+                  alt="cart"
+                />
+                <span class="cart__text">Корзина пуста</span>
+              </a>
+            </div>
+            <!-- /.kart -->
+            <div class="h-first__search-mobile" data-type="open-search"></div>
+            <a class="h-first__cart-mobile" href="#">
+              <img src="assets/image/cart-mobile.svg" alt="cart"
+            /></a>
+          </div>
+          <!-- /.h-first -->
+        </div>
+        <div class="h-container line wrap">
+          <div class="h-second">
+            <a href="" class="link">Акции</a>
+            <a href="" class="link">О нас</a>
+            <a href="" class="link">Мероприятия</a>
+            <a href="" class="link">Оплата и доставка</a>
+            <a href="" class="link">Что с моим заказом?</a>
+            <a href="" class="link">Гос. закупки</a>
+            <a href="" class="link">Блог</a>
+            <a href="" class="link">Мастер-классы</a>
+            <a href="" class="link">Контакты</a>
+          </div>
+          <!-- /.h-second -->
+        </div>
+        <div class="h-container wrap">
+          <div class="h-third">
+            <div class="h-menu">
+              <a class="link h-menu__link" href="">3D-принтеры</a>
+            </div>
+            <div class="h-menu">
+              <a class="link h-menu__link" href="">3D-сканеры</a>
+            </div>
+            <div class="h-menu">
+              <a class="link h-menu__link" href="">Станки</a>
+            </div>
+            <div class="h-menu">
+              <a class="link h-menu__link" href="">Роботы</a>
+            </div>
+            <div class="h-menu">
+              <a class="link h-menu__link" href="">Образование</a>
+            </div>
+            <div class="h-menu">
+              <a class="link h-menu__link" href="">Стоматологам</a>
+            </div>
+            <div class="h-menu">
+              <a class="link h-menu__link" href="">Гаджеты</a>
+            </div>
+            <div class="h-menu">
+              <a class="link h-menu__link" href="">Материалы</a>
+            </div>
+            <div class="h-menu">
+              <a class="link h-menu__link" href="">ПО</a>
+            </div>
+            <div class="h-menu">
+              <a class="link h-menu__link" href="">Решения</a>
+            </div>
+            <div class="h-menu">
+              <a class="link h-menu__link" href="">Учебный центр</a>
+            </div>
+            <div class="h-menu">
+              <a class="link h-menu__link" href="">Услуги</a>
+            </div>
+          </div>
+          <!-- /.h-third -->
+        </div>
+      </div>
+      <!-- /.header -->
+    </header>
+    <main class="main wrapper wrap">
+      <div class="container">
+        <div class="main__big-image">
+          <img src="assets/image/mask-group.jpg" alt="mask-group" />
+        </div>
+        <div class="main__container">
+          <div class="sendResume">
+            <p class="sendResume__title">
+              Твоя работа <br />
+              в крупнейшем интеграторе цифрового производства
+            </p>
+            <button class="button">
+              <span class="button__link">
+                <span class="button__text">Отправить резюме</span>
+              </span>
+            </button>
+            <!-- /.button -->
+            <p class="remark">
+              Нажимая кнопку, вы соглашаетесь <br />
+              на обработку персональных данных.
+            </p>
+          </div>
+          <div class="about">
+            <p class="text">
+              Top 3D Shop – лидер по продажам 3D-оборудования в России и странах
+              СНГ. В 2018 мы стали лучшим интегратором 3D оборудования по
+              аддитивным технологиям и цифровому производству по версии
+              <span class="text-red text-underline">3D Print Awards.</span>
+            </p>
+
+            <p class="text">
+              За 6 лет работы более 10 000 клиентов по всей России и СНГ выбрали
+              Top 3D Shop. В 2018 наш оборот составил 600 млн. рублей, в
+              компании работает более 100 сотрудников.
+            </p>
+
+            <p class="text">
+              Новая цель: 1 млрд торгового оборота в этом году и выход на
+              международные рынки. Если вы — целеустремленный специалист,
+              готовый учиться новым навыкам и учить других, мыслите не просто
+              как исполнитель, а как владелец своего направления, то нам по
+              пути!
+            </p>
+          </div>
+        </div>
+        <div class="delimiter">
+          <span class="delimiter__text">Лучше один раз увидеть:</span>
+        </div>
+        <div class="moreAbout">
+          <a class="moreAbout__link text-red" href="#"
+            >Как устроена наша компания изнутри</a
+          >
+          <a class="moreAbout__link" href="#"
+            >Как создавалась компания - необычная история</a
+          >
+          <a class="moreAbout__link" href="#">Читай о нас на 3D Today</a>
+        </div>
+      </div>
+      <!-- /.container -->
+    </main>
+    <!-- /.main -->
+    <aside class="wrapper">
+      <div class="video">
+        <div class="video__head">
+          <div class="text">Видео о нас</div>
+          <div class="slider-nav">
+            <button class="slider-nav__left">
+              <span class="text"></span>
+            </button>
+            <button class="slider-nav__right">
+              <span class="text"></span>
+            </button>
+          </div>
+        </div>
+        <!-- /.video__head -->
+        <div class="slider-content">
+          <div class="slider-content__item">
+            <img src="assets/image/slide-1.jpg" alt="slide-1" />
+          </div>
+          <div class="slider-content__item">
+            <img src="assets/image/slide-2.jpg" alt="slide-2" />
+          </div>
+        </div>
+      </div>
+      <!-- /.video -->
+    </aside>
+  </body>
+</html>

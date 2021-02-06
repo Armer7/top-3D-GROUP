@@ -1,0 +1,105 @@
+.video {
+  background: $gray-light-color;
+  margin-bottom: 5px;
+  padding: 30px 12px;
+  &__head {
+    @include d-flex-justify-space-between;
+    margin-bottom: 20px;
+    @include media-small {
+      margin-bottom: 60px;
+    }
+  }
+  .text {
+    @include sf-pro-display-regular;
+    font-size: 28px;
+    line-height: 35px;
+    color: $text-header-color;
+
+    @include media-small {
+      font-size: 36px;
+      line-height: 43px;
+    }
+  }
+  .slider-nav {
+    @include d-flex-justify-center;
+    width: 61px;
+    height: 30px;
+
+    @include media-small {
+      width: 79px;
+      height: 39px;
+    }
+    &__left{
+      border:1px solid $gray-color;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+      background-color: transparent;
+      position: relative;
+      width: 50%;
+      height: 100%;
+      cursor: pointer;
+
+      .text {
+        @include arrowSelect(to left, 1px, 30px, $text-color);
+        right: 6px;
+        @include media-small {
+          @include arrowSelect(to left, 1px, 40px, $text-color);
+          right: 10px;
+        }
+      }
+      &:active {
+        border:2px solid $gray-color;
+      }
+    }
+
+    &__right {
+      border:1px solid $gray-color;
+      border-left: none;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      background-color: transparent;
+      position: relative;
+      width: 49%;
+      height: 100%;
+      cursor: pointer;
+      .text {
+        @include arrowSelect(to right, 1px, 30px, $text-color);
+        right: 11px;
+
+        @include media-small {
+          @include arrowSelect(to right, 1px, 40px, $text-color);
+          right: 16px;
+        }
+      }
+      &:active {
+        border:2px solid $gray-color;
+      }
+    }
+  }
+
+  .slider-content {
+    @include d-flex-justify-space-between;
+    flex-direction: column;
+    @include media-small-xs {
+      flex-direction: row;
+    }
+    &__item {
+      height: auto;
+      max-width: 550px;
+      &:not(:last-child) {
+        display: none;
+      }
+      @include media-small-xs {
+        width: 550px;
+        &:not(:last-child) {
+          margin-right: 15px;
+          display: block;
+        }
+      }
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

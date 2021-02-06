@@ -1,0 +1,50 @@
+@mixin arrowSelect($toSide, $thickness, $size, $color) {
+  //toSide - the side the arrow is facing
+  //thickness - arrow line thickness
+  //size - the size of the square where the arrow is inserted
+  //color - the color line arrow
+  $top-width: 0;
+  $top-color: transparent;
+  $right-width: 1px;
+  $right-color: #000;
+  $bottom-width: 1px;
+  $bottom-color: #000;
+  $left-width: 0;
+  $left-color: transparent;
+  @if $toSide == (to top) {
+    top: - $size / 3;
+    transform: rotate(225deg);
+  } @else if $toSide == (to right) {
+    top: 0;
+    transform: rotate(315deg);
+  } @else if $toSide == (to bottom) {
+    top: - $size / 3;
+    transform: rotate(45deg);
+  } @else if $toSide == (to left) {
+    top: 0;
+    transform: rotate(135deg);
+  } @else {
+    $toSide: false;
+
+    @warn "Incorrect arrow direction: #{inspect($toSide)}";
+  }
+
+  @if $toSide {
+    $right-width: $thickness;
+    $right-color: $color;
+    $bottom-width: $thickness;
+    $bottom-color: $color;
+    content: '';
+    width: $size / 3;
+    height: $size / 3;
+    border-style: solid;
+    position: absolute;
+
+    bottom: 0;
+    right: $size / 3;
+    margin: auto;
+    pointer-events: none;
+    border-width: $top-width $right-width $bottom-width $left-width;
+    border-color: $top-color $right-color $bottom-color $left-color;
+  }
+}

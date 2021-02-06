@@ -1,0 +1,16 @@
+.cart {
+  background-color: $red-color;
+  padding: 6px 16px;
+  border-radius: 4px;
+  &__link{
+    @include d-flex-justify-space-between;
+  }
+  &__icon{
+    margin-right: 8px;
+  }
+  &__text{
+    font-weight: 600;
+    color: $white-color;
+
+  }
+}

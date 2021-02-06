@@ -1,0 +1,42 @@
+.h-contact {
+  display: none;
+  background-color: $yellow-color;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;
+  color: $black-color;
+  @include media-md {
+    display: block;
+  }
+
+  &__wrap {
+    @include d-flex-justify-space-between;
+    padding: 7px 20px;
+
+  }
+
+  &__left {
+    @include d-flex-justify-space-between;
+  }
+
+  &__right {
+    @include d-flex-justify-space-between;
+  }
+
+  &__item {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  &__city {
+    position: relative;
+    padding-right: 18px;
+
+    &:before {
+      @include arrowSelect(to bottom, 1px, 18px, $text-header-color);
+    }
+  }
+}
